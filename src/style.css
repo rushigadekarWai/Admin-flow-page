@@ -1,0 +1,382 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #F4F4F9; */
+}
+html{
+  
+}
+.main-nav{
+    background-color: #ffffff;
+   
+}
+body{
+    
+    background-color: #F4F4F9;
+        color: #333;
+
+}
+.navbar-container{
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 55px; /* Navbar height */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+   
+   
+}
+.nav-logo{
+    width: 300px; /* Fixed width for logo */
+    height: 55px; /* Height matching navbar */
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: start; */
+    /* font-size: 20px; */
+    font-weight: bold;
+    /* margin-right: 20px; */
+}
+
+#logo-tcc{
+   height: 45px;
+   margin: 0 20px 10px ;
+   
+}
+
+.column-1{
+    width: 339px;
+    height: 44px;
+    /* background-color: #f8f9fa; */
+    color: white;
+    letter-spacing: 0px;
+   
+}
+
+.team-heading{
+    display: inline-block;
+    align-items: start;
+    width: 174px;
+    font-size: 13px;
+    text-align: left;  
+   
+}
+.team-heading-list{
+    display: flex;
+    flex-wrap: wrap;
+   width: 300px;
+   font-size: 10px;
+   /* color: #6C757D; */
+
+}
+
+.add-member-list{
+    overflow: hidden;
+}
+
+
+/* Right container */
+
+.right-conatainer{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding-top: 12px;
+    /* margin-left: -20px; */
+    box-sizing: border-box;
+    align-items: center;
+    width: 350px;
+
+}
+.flag{
+    width: 22px;
+    height: 14px;
+}
+.lang{
+    font-size: 14px;
+}
+
+.us-logo{
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /* margin-left: 10px; */
+}
+.dropdown:hover{
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Dropdown items */
+.dropdown-content a {
+    color: black;
+    padding: 8px 10px;
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+/* user profile */
+
+.user-profile {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 1.2;
+    margin-right: -20px;
+}
+
+.name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+
+.role {
+    font-size: 12px;
+    color: #797A7A;
+    margin: 0;
+}
+
+.notification-icon{
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+   padding-top: 5px;
+   color: #585858;
+
+}
+.setting-icon{
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+   padding-top: 5px;
+   color: #585858;
+    
+}
+
+.right-profile{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: 10px;
+    margin-right:-20px;
+    padding-top: 6px;
+}
+
+
+/* sidebar csss */
+
+.sidebar {
+    position: fixed;
+    top: 55px; /* Starts below navbar */
+    left: 0;
+    width: 270px; /* Same as logo width */
+    height: calc(100vh - 55px); /* Full height minus navbar */
+    background: #FFFFFF;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+
+/* Sidebar Menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px;
+    padding: 20px 30px;
+    /* font-size: 10px; */
+    color: #333;
+    /* border-bottom: 1px solid #ddd; */
+    cursor: pointer;
+    
+}
+.sidebar li {
+    display: flex;
+    align-items: center;
+    padding: 10px 13px; /* Adjust spacing */
+    font-size: 12px;
+    color: #6c757d;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li i {
+    margin-right: 12px; /* Space between icon and text */
+    font-size: 14px;
+    color: #666;
+}
+.sidebar ul li.open .arrow {
+    transform: rotate(90deg);
+    
+}
+.sidebar li .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar li .d-flex div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+.sidebar li img {
+    width: 18px; /* Adjust icon size */
+    height: auto;
+}
+.sidebar li .arrow {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c757d;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sidebar li:hover {
+    background: #f5f5f5;
+}
+
+.sidebar li:hover .arrow {
+    transform: translateX(5px);
+    color: #333;
+}
+
+
+.sidebar ul li:hover {
+    background: #f4f4f4;
+}
+
+/* Page Content */
+.content {
+    margin-left: 270px; 
+    padding: 20px;
+    margin-top: 75px; 
+    
+}
+
+
+
+/* main section */
+
+
+.form-profile{
+    width: 100%; /* Adjust width as needed */
+    height: 200px; /* Set a fixed height or use `vh`/`%` */
+    overflow: hidden; /* Ensures no overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the div without distortion */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+
+
+.image-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.symbol {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.hover-effect:hover {
+    background-color: rgba(13, 110, 253, 0.1); /* Light primary hover effect */
+    border-color: #0d6efd !important; /* Primary color on hover */
+}
+
+
+ .skill-option-list{
+    color: 303030;
+
+}
+
+.gg
+{
+    border: 1px dashed blue;
+}
+
